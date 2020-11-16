@@ -1,5 +1,5 @@
-ООП2.py/
-ООП1.py/
+git rm --cached ООП2.py/
+git rm --cached ООП1.py/
 
 # Editors
 .vscode/
