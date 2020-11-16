@@ -46,11 +46,11 @@ class Ui_MainWindow(object):
 "")
         self.english_word.setObjectName("english_word")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(300, 230, 271, 31))
+        self.label_2.setGeometry(QtCore.QRect(300, 220, 271, 31))
         self.label_2.setStyleSheet("font: 16pt \"MS Sans Serif\";")
         self.label_2.setObjectName("label_2")
         self.answer_button = QtWidgets.QPushButton(self.centralwidget)
-        self.answer_button.setGeometry(QtCore.QRect(300, 510, 161, 61))
+        self.answer_button.setGeometry(QtCore.QRect(300, 510, 161, 51))
         self.answer_button.setStyleSheet("background-color:rgb(73, 73, 73, );\n"
 "font: 16pt \"MS Sans Serif\";\n"
 "border-radius: 10px;\n"
@@ -59,7 +59,7 @@ class Ui_MainWindow(object):
 "font-weight:600")
         self.answer_button.setObjectName("answer_button")
         self.skip_button = QtWidgets.QPushButton(self.centralwidget)
-        self.skip_button.setGeometry(QtCore.QRect(470, 510, 171, 61))
+        self.skip_button.setGeometry(QtCore.QRect(470, 510, 171, 51))
         self.skip_button.setStyleSheet("background-color:rgb(255, 255, 255, );\n"
 "font: 16pt \"MS Sans Serif\";\n"
 "color: rgb(73, 73, 73);\n"
@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
 "")
         self.skip_button.setObjectName("skip_button")
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(300, 170, 261, 51))
+        self.label_3.setGeometry(QtCore.QRect(300, 160, 261, 51))
         self.label_3.setStyleSheet("font: 16pt \"MS Sans Serif\";")
         self.label_3.setObjectName("label_3")
         self.translation3 = QtWidgets.QRadioButton(self.centralwidget)
@@ -88,6 +88,19 @@ class Ui_MainWindow(object):
         self.translation4.setGeometry(QtCore.QRect(301, 442, 411, 27))
         self.translation4.setStyleSheet("font: 16pt \"MS Sans Serif\";")
         self.translation4.setObjectName("translation4")
+        self.back_from_testing_button = QtWidgets.QPushButton(self.centralwidget)
+        self.back_from_testing_button.setGeometry(QtCore.QRect(290, 130, 171, 31))
+        self.back_from_testing_button.setStyleSheet("background-color:rgb(255, 255, 255, );\n"
+"font: 16pt \"MS Sans Serif\";\n"
+"color: rgb(153, 153, 153);\n"
+"border-radius: 15px;\n"
+"font-weight:600\n"
+"")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("images/icon_arrow.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.back_from_testing_button.setIcon(icon)
+        self.back_from_testing_button.setIconSize(QtCore.QSize(20, 20))
+        self.back_from_testing_button.setObjectName("back_from_testing_button")
         self.label.raise_()
         self.answer_button.raise_()
         self.skip_button.raise_()
@@ -102,6 +115,7 @@ class Ui_MainWindow(object):
         self.translation1.raise_()
         self.translation2.raise_()
         self.translation4.raise_()
+        self.back_from_testing_button.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 897, 21))
@@ -130,3 +144,4 @@ class Ui_MainWindow(object):
         self.translation1.setText(_translate("MainWindow", "translation1"))
         self.translation2.setText(_translate("MainWindow", "translation2"))
         self.translation4.setText(_translate("MainWindow", "translation4"))
+        self.back_from_testing_button.setText(_translate("MainWindow", "На главную"))

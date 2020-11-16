@@ -40,6 +40,7 @@ class testing_window(QtWidgets.QMainWindow):
         self.mistakes = 0
         self.ui.answer_button.clicked.connect(self.answer_button_clicked)
         self.ui.skip_button.clicked.connect(self.skip_button_clicked)
+        self.ui.back_from_testing_button.clicked.connect(self.back_from_testing_button_clicked)
 
 
     def get_values(self):
@@ -76,6 +77,10 @@ class testing_window(QtWidgets.QMainWindow):
         self.ui.wrong_answers_label.setText(str(self.mistakes))
         self.get_values()
 
+    def back_from_testing_button_clicked(self):
+        self.close()
+
+
 
 class words_input_window(QtWidgets.QMainWindow):
     def __init__(self):
@@ -101,7 +106,6 @@ class words_input_window(QtWidgets.QMainWindow):
 
     def back_button_clicked(self):
         self.close()
-
 
 
 app = QtWidgets.QApplication([])

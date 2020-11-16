@@ -16,7 +16,7 @@ class Ui_Dialog(object):
         Dialog.setObjectName("Dialog")
         Dialog.resize(897, 622)
         self.label_3 = QtWidgets.QLabel(Dialog)
-        self.label_3.setGeometry(QtCore.QRect(0, 0, 901, 621))
+        self.label_3.setGeometry(QtCore.QRect(0, 10, 901, 621))
         self.label_3.setText("")
         self.label_3.setPixmap(QtGui.QPixmap("images/testing_back.png"))
         self.label_3.setObjectName("label_3")
@@ -37,16 +37,27 @@ class Ui_Dialog(object):
         self.label_7.setStyleSheet("font: 16pt \"MS Sans Serif\";")
         self.label_7.setObjectName("label_7")
         self.translation_input = QtWidgets.QLineEdit(Dialog)
-        self.translation_input.setGeometry(QtCore.QRect(300, 390, 371, 61))
+        self.translation_input.setGeometry(QtCore.QRect(300, 400, 371, 61))
+        self.translation_input.setStyleSheet("border-radius: 15px;\n"
+"border-color: rgb(204, 204, 204);\n"
+"border-width: 3px;\n"
+"border-style: solid;\n"
+"font: 14pt \"MS Sans Serif\";\n"
+"color: rgb(204, 204, 204);")
         self.translation_input.setObjectName("translation_input")
         self.word_input = QtWidgets.QLineEdit(Dialog)
-        self.word_input.setGeometry(QtCore.QRect(300, 310, 371, 61))
-        self.word_input.setStyleSheet("background: transparent\n"
-"\n"
+        self.word_input.setGeometry(QtCore.QRect(300, 320, 371, 61))
+        self.word_input.setStyleSheet("background: transparent;\n"
+"border-radius: 15px;\n"
+"border-color: rgb(204, 204, 204);\n"
+"border-width: 3px;\n"
+"border-style: solid;\n"
+"font: 14pt \"MS Sans Serif\";\n"
+"color: rgb(204, 204, 204);\n"
 "")
         self.word_input.setObjectName("word_input")
         self.ok_button = QtWidgets.QPushButton(Dialog)
-        self.ok_button.setGeometry(QtCore.QRect(450, 510, 121, 51))
+        self.ok_button.setGeometry(QtCore.QRect(310, 510, 181, 51))
         self.ok_button.setStyleSheet("background-color:rgb(73, 73, 73, );\n"
 "font: 16pt \"MS Sans Serif\";\n"
 "border-radius: 10px;\n"
@@ -55,13 +66,17 @@ class Ui_Dialog(object):
 "font-weight:600")
         self.ok_button.setObjectName("ok_button")
         self.back_button = QtWidgets.QPushButton(Dialog)
-        self.back_button.setGeometry(QtCore.QRect(300, 510, 131, 51))
+        self.back_button.setGeometry(QtCore.QRect(300, 130, 141, 31))
         self.back_button.setStyleSheet("background-color:rgb(255, 255, 255, );\n"
 "font: 16pt \"MS Sans Serif\";\n"
-"color: rgb(73, 73, 73);\n"
+"color: rgb(153, 153, 153);\n"
 "border-radius: 15px;\n"
 "font-weight:600\n"
 "")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("images/icon_arrow.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.back_button.setIcon(icon)
+        self.back_button.setIconSize(QtCore.QSize(20, 20))
         self.back_button.setObjectName("back_button")
         self.label_3.raise_()
         self.translation_input.raise_()

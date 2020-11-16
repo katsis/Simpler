@@ -23,9 +23,9 @@
    <widget class="QPushButton" name="begin_testing_button">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>300</x>
       <y>310</y>
-      <width>261</width>
+      <width>301</width>
       <height>61</height>
      </rect>
     </property>
@@ -346,13 +346,23 @@ font-weight:600</string>
     <property name="text">
      <string>Начать тестирование</string>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>images/Frame 20.svg</normaloff>images/Frame 20.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
    </widget>
    <widget class="QPushButton" name="upload_word_button">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>300</x>
       <y>380</y>
-      <width>261</width>
+      <width>301</width>
       <height>61</height>
      </rect>
     </property>
@@ -365,13 +375,23 @@ border-color: rgb(73, 73, 73);
 border-width: 3px;
 border-style: solid;
 font-weight:600;
-
+icon { background-color: rgb(73, 73, 73)} ;
 
 
 </string>
     </property>
     <property name="text">
      <string>Загрузить новые слова</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>images/cloud-upload.png</normaloff>images/cloud-upload.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
     </property>
    </widget>
    <widget class="QLabel" name="label">

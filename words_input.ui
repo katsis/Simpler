@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
+     <y>10</y>
      <width>901</width>
      <height>621</height>
     </rect>
@@ -94,17 +94,18 @@
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>390</y>
+     <y>400</y>
      <width>371</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">border-radius: 15px;
-border-color: rgb(73, 73, 73);
+border-color: rgb(204, 204, 204);
 border-width: 3px;
 border-style: solid;
-</string>
+font: 14pt &quot;MS Sans Serif&quot;;
+color: rgb(204, 204, 204);</string>
    </property>
    <property name="text">
     <string>Введите перевод</string>
@@ -114,7 +115,7 @@ border-style: solid;
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>310</y>
+     <y>320</y>
      <width>371</width>
      <height>61</height>
     </rect>
@@ -122,9 +123,11 @@ border-style: solid;
    <property name="styleSheet">
     <string notr="true">background: transparent;
 border-radius: 15px;
-border-color: rgb(73, 73, 73);
+border-color: rgb(204, 204, 204);
 border-width: 3px;
 border-style: solid;
+font: 14pt &quot;MS Sans Serif&quot;;
+color: rgb(204, 204, 204);
 </string>
    </property>
    <property name="text">
@@ -134,9 +137,9 @@ border-style: solid;
   <widget class="QPushButton" name="ok_button">
    <property name="geometry">
     <rect>
-     <x>450</x>
+     <x>310</x>
      <y>510</y>
-     <width>121</width>
+     <width>181</width>
      <height>51</height>
     </rect>
    </property>
@@ -156,25 +159,31 @@ font-weight:600</string>
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>510</y>
-     <width>131</width>
-     <height>51</height>
+     <y>130</y>
+     <width>141</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgb(255, 255, 255, );
 font: 16pt &quot;MS Sans Serif&quot;;
-color: rgb(73, 73, 73);
+color: rgb(153, 153, 153);
 border-radius: 15px;
-border-radius: 15px;
-border-color: rgb(73, 73, 73);
-border-width: 3px;
-border-style: solid;
 font-weight:600
 </string>
    </property>
    <property name="text">
     <string>На главную</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>images/icon_arrow.svg</normaloff>images/icon_arrow.svg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
    </property>
   </widget>
   <zorder>label_3</zorder>

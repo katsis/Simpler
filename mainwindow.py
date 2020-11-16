@@ -14,12 +14,13 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(880, 554)
+        MainWindow.resize(876, 546)
+        MainWindow.setAutoFillBackground(False)
         MainWindow.setStyleSheet("")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.begin_testing_button = QtWidgets.QPushButton(self.centralwidget)
-        self.begin_testing_button.setGeometry(QtCore.QRect(320, 310, 261, 61))
+        self.begin_testing_button.setGeometry(QtCore.QRect(300, 310, 301, 61))
         palette = QtGui.QPalette()
         brush = QtGui.QBrush(QtGui.QColor(255, 255, 255))
         brush.setStyle(QtCore.Qt.SolidPattern)
@@ -126,21 +127,33 @@ class Ui_MainWindow(object):
 "border-radius: 10px;\n"
 "color: rgb(255, 255, 255);\n"
 "font-weight:600")
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("images/Frame 20.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.begin_testing_button.setIcon(icon)
+        self.begin_testing_button.setIconSize(QtCore.QSize(30, 30))
         self.begin_testing_button.setObjectName("begin_testing_button")
         self.upload_word_button = QtWidgets.QPushButton(self.centralwidget)
-        self.upload_word_button.setGeometry(QtCore.QRect(320, 380, 261, 61))
+        self.upload_word_button.setGeometry(QtCore.QRect(300, 380, 301, 61))
         self.upload_word_button.setStyleSheet("background-color:rgb(255, 255, 255, );\n"
 "font: 16pt \"MS Sans Serif\";\n"
 "color: rgb(73, 73, 73);\n"
 "border-radius: 15px;\n"
-"font-weight:600\n"
-"\n"
+"border-color: rgb(73, 73, 73);\n"
+"border-width: 3px;\n"
+"border-style: solid;\n"
+"font-weight:600;\n"
+"icon { background-color: rgb(73, 73, 73)} ;\n"
 "\n"
 "\n"
 "")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("images/cloud-upload.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.upload_word_button.setIcon(icon1)
+        self.upload_word_button.setIconSize(QtCore.QSize(30, 30))
         self.upload_word_button.setObjectName("upload_word_button")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(0, 0, 881, 511))
+        self.label.setTabletTracking(False)
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap("images/mainwindow_back.png"))
         self.label.setObjectName("label")
@@ -166,7 +179,7 @@ class Ui_MainWindow(object):
         self.label_4.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 880, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 876, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -178,9 +191,10 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Simpler"))
         self.begin_testing_button.setText(_translate("MainWindow", "Начать тестирование"))
         self.upload_word_button.setText(_translate("MainWindow", "Загрузить новые слова"))
         self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600;\">Давай изучать английские слова!</span></p></body></html>"))
         self.label_3.setText(_translate("MainWindow", "Если хочешь проверить знания, то иди в тестирование,"))
         self.label_4.setText(_translate("MainWindow", " если хочешь добавить слова в тест — добавляй :)"))
+
