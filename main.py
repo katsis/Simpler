@@ -82,6 +82,7 @@ class testing_window(QtWidgets.QMainWindow):
 
 
 
+
 class words_input_window(QtWidgets.QMainWindow):
     def __init__(self):
         super(words_input_window, self).__init__()
@@ -89,6 +90,8 @@ class words_input_window(QtWidgets.QMainWindow):
         self.ui.setupUi(self)
         self.ui.ok_button.clicked.connect(self.ok_button_clicked)
         self.ui.back_button.clicked.connect(self.back_button_clicked)
+        self.ui.begin_testing_from_input_button.clicked.connect(self.begin_testing_from_input_button_clicked)
+        self.testing_window = testing_window()
 
     def ok_button_clicked(self):
         translation_input = self.ui.translation_input.text()
@@ -105,6 +108,10 @@ class words_input_window(QtWidgets.QMainWindow):
             self.ui.word_input.clear()
 
     def back_button_clicked(self):
+        self.close()
+
+    def begin_testing_from_input_button_clicked(self):
+        self.testing_window.show()
         self.close()
 
 

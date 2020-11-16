@@ -57,7 +57,7 @@ class Ui_Dialog(object):
 "")
         self.word_input.setObjectName("word_input")
         self.ok_button = QtWidgets.QPushButton(Dialog)
-        self.ok_button.setGeometry(QtCore.QRect(310, 510, 181, 51))
+        self.ok_button.setGeometry(QtCore.QRect(310, 510, 151, 51))
         self.ok_button.setStyleSheet("background-color:rgb(73, 73, 73, );\n"
 "font: 16pt \"MS Sans Serif\";\n"
 "border-radius: 10px;\n"
@@ -78,6 +78,15 @@ class Ui_Dialog(object):
         self.back_button.setIcon(icon)
         self.back_button.setIconSize(QtCore.QSize(20, 20))
         self.back_button.setObjectName("back_button")
+        self.begin_testing_from_input_button = QtWidgets.QPushButton(Dialog)
+        self.begin_testing_from_input_button.setGeometry(QtCore.QRect(470, 510, 171, 51))
+        self.begin_testing_from_input_button.setStyleSheet("background-color:rgb(255, 255, 255, );\n"
+"font: 16pt \"MS Sans Serif\";\n"
+"color: rgb(73, 73, 73);\n"
+"border-radius: 15px;\n"
+"font-weight:600\n"
+"")
+        self.begin_testing_from_input_button.setObjectName("begin_testing_from_input_button")
         self.label_3.raise_()
         self.translation_input.raise_()
         self.word_input.raise_()
@@ -87,6 +96,7 @@ class Ui_Dialog(object):
         self.label_5.raise_()
         self.label_6.raise_()
         self.label_7.raise_()
+        self.begin_testing_from_input_button.raise_()
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -101,3 +111,4 @@ class Ui_Dialog(object):
         self.word_input.setText(_translate("Dialog", "Введите английское слово"))
         self.ok_button.setText(_translate("Dialog", "Добавить"))
         self.back_button.setText(_translate("Dialog", "На главную"))
+        self.begin_testing_from_input_button.setText(_translate("Dialog", "К тестированию"))

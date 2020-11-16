@@ -139,7 +139,7 @@ color: rgb(204, 204, 204);
     <rect>
      <x>310</x>
      <y>510</y>
-     <width>181</width>
+     <width>151</width>
      <height>51</height>
     </rect>
    </property>
@@ -186,6 +186,27 @@ font-weight:600
     </size>
    </property>
   </widget>
+  <widget class="QPushButton" name="begin_testing_from_input_button">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>510</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(255, 255, 255, );
+font: 16pt &quot;MS Sans Serif&quot;;
+color: rgb(73, 73, 73);
+border-radius: 15px;
+font-weight:600
+</string>
+   </property>
+   <property name="text">
+    <string>К тестированию</string>
+   </property>
+  </widget>
   <zorder>label_3</zorder>
   <zorder>translation_input</zorder>
   <zorder>word_input</zorder>
@@ -195,6 +216,7 @@ font-weight:600
   <zorder>label_5</zorder>
   <zorder>label_6</zorder>
   <zorder>label_7</zorder>
+  <zorder>begin_testing_from_input_button</zorder>
  </widget>
  <resources/>
  <connections/>
